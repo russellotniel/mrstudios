@@ -38,20 +38,8 @@ h4 {
   font-size: 0.875rem;
 }
 
-@media screen and (min-width: 800px){
-  
-}
-
 .page {
   min-height: calc(100vh - (6rem + 4rem));
-}
-
-.page-footer {
-  text-align: center;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 `
 

@@ -1,10 +1,17 @@
 import React from "react"
+import About from "../components/About"
+import Hero from "../components/Hero"
 import Layout from "../components/Layout"
+import Location from "../components/Location"
+import Contact from "../components/Contact"
 
 const HomePage = () => {
   return (
     <Layout>
-      <h1>Test</h1>
+      <Hero />
+      <About />
+      <Location />
+      <Contact />
     </Layout>
   )
 }

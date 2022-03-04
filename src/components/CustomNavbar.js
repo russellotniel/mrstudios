@@ -36,8 +36,8 @@ const CustomNavbar = () => {
             <h2>About</h2>
           </Link>
 
-          <Link to="/product">
-            <h2>Product</h2>
+          <Link to="/products">
+            <h2>Products</h2>
           </Link>
 
           <Link to="/contact">
@@ -50,11 +50,11 @@ const CustomNavbar = () => {
 }
 
 const Wrapper = styled.nav`
-  margin-bottom: 1rem;
-
   .link {
     color: whitesmoke;
     text-decoration: none;
+    align-items: center;
+    padding-top: 1em;
   }
 
   .hamburger {

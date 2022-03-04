@@ -8,7 +8,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <CustomNavbar />
-      <Container className="page">{children}</Container>
+      {/* <Container className="page">{children}</Container> */}
+      {children}
       <Footer />
     </>
   )
