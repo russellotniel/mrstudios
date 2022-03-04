@@ -32,6 +32,10 @@ const CustomNavbar = () => {
           <h1>Menu</h1>
         </Offcanvas.Header>
         <Offcanvas.Body>
+          <Link to="/">
+            <h2>Home</h2>
+          </Link>
+
           <Link to="/about">
             <h2>About</h2>
           </Link>
