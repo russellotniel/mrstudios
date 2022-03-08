@@ -1,14 +1,13 @@
 import React from "react"
-import Container from "react-bootstrap/Container"
-import "bootstrap/dist/css/bootstrap.min.css"
-import CustomNavbar from "./CustomNavbar"
 import Footer from "./Footer"
+import Navbar from "./Navbar"
+
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const Layout = ({ children }) => {
   return (
     <>
-      <CustomNavbar />
-      {/* <Container className="page">{children}</Container> */}
+      <Navbar />
       {children}
       <Footer />
     </>

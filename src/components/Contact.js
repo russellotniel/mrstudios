@@ -15,7 +15,7 @@ const Contact = () => {
 
             <p className="mt-3">
               Shoot us an email or text us to get the shoes that you want right
-              away
+              away.
             </p>
 
             <div className="mt-4">

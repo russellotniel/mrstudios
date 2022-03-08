@@ -27,10 +27,16 @@ const CustomNavbar = () => {
         </Container>
       </Navbar>
 
-      <Offcanvas show={show} onHide={handleClose} placement="end">
+      <Offcanvas
+        show={show}
+        onHide={handleClose}
+        placement="end"
+        className="test"
+      >
         <Offcanvas.Header closeButton>
           <h1>Menu</h1>
         </Offcanvas.Header>
+
         <Offcanvas.Body>
           <Link to="/">
             <h2>Home</h2>
@@ -53,12 +59,11 @@ const CustomNavbar = () => {
   )
 }
 
-const Wrapper = styled.nav`
+const Wrapper = styled.div`
   .link {
     color: whitesmoke;
     text-decoration: none;
     align-items: center;
-    padding-top: 1em;
   }
 
   .hamburger {

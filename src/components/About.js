@@ -52,8 +52,7 @@ const Wrapper = styled.section`
   }
 
   .column-border {
-    border: 1px solid gray;
-    align-items: center;
+    border: 0.5px solid gray;
   }
 
   @media (min-width: 800px) {
