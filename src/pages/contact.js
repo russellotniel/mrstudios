@@ -3,9 +3,7 @@ import React from "react"
 import styled from "styled-components"
 import { Container } from "react-bootstrap"
 import Card from "react-bootstrap/Card"
-import Stack from "react-bootstrap/Stack"
 import Layout from "../components/Layout"
-import { Button } from "react-bootstrap"
 import { FaAddressBook, FaPhone, FaGlobe } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
 import { IconContext } from "react-icons"
@@ -36,34 +34,34 @@ const contact = () => {
             <section>
               <article className="d-flex justify-content-center pb-4 pt-5 min-height">
                 <IconContext.Provider value={{ size: "50px" }}>
-                  <div className="">
-                    <Stack direction="horizontal" gap={4}>
-                      <div className="text-center w-25">
+                  <div className="row">
+                    {/* <Stack direction="horizontal" gap={4}> */}
+                      <div className="col-sm text-center">
                         <p>
                           <span>Address:</span> 198 West 21th Street, Suite 721
                           New York NY 10016
                         </p>
                         <FaAddressBook></FaAddressBook>
                       </div>
-                      <div className="text-center">
+                      <div className="col-sm text-center">
                         <p>
-                          <span>Phone:</span> +62 8232-4242-2345
+                          <span>Phone:</span> +62 832-4242-2345
                         </p>
                         <FaPhone></FaPhone>
                       </div>
-                      <div className="text-center">
+                      <div className="col-sm text-center">
                         <p>
                           <span>Email:</span> mrstudios@gmail.com
                         </p>
                         <MdEmail></MdEmail>
                       </div>
-                      <div className="text-center">
+                      <div className="col-sm text-center">
                         <p>
                           <span>Website:</span> mrstudios.com
                         </p>
                         <FaGlobe></FaGlobe>
                       </div>
-                    </Stack>
+                    {/* </Stack> */}
                   </div>
                 </IconContext.Provider>
               </article>
@@ -231,6 +229,13 @@ const Wrapper = styled.section`
 
     .left {
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .info{
       display: flex;
       flex-direction: column;
       align-content: center;
