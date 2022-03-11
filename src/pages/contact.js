@@ -7,11 +7,13 @@ import Layout from "../components/Layout"
 import { FaAddressBook, FaPhone, FaGlobe } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
 import { IconContext } from "react-icons"
+import SEO from "../components/SEO"
 
 const contact = () => {
   return (
     <Wrapper>
       <Layout>
+        <SEO title="Contact Us" />
         <Container className="mt-4 mb-4">
           <main className="page">
             <section className="contact-page">

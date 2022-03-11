@@ -6,11 +6,13 @@ import Card from "react-bootstrap/Card"
 import { StaticImage } from "gatsby-plugin-image"
 import { SiNike, SiAdidas, SiNewbalance, SiJordan } from "react-icons/si"
 import { IconContext } from "react-icons"
+import SEO from "../components/SEO"
 
 const about = () => {
   return (
     <Wrapper>
       <Layout>
+      <SEO title="About Us" />
         <StaticImage
           src="../assets/images/shoegallery.jpg"
           layout="constrained"
