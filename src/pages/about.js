@@ -3,7 +3,6 @@ import styled from "styled-components"
 import Layout from "../components/Layout"
 import Container from "react-bootstrap/Container"
 import Card from "react-bootstrap/Card"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { SiNike, SiAdidas, SiNewbalance, SiJordan } from "react-icons/si"
 import { IconContext } from "react-icons"
@@ -24,16 +23,6 @@ const about = () => {
         <Container>
           {/* Title */}
           <main className="page">
-            {/* <StaticImage
-                src="../assets/images/shoegallery.jpg"
-                layout="constrained"
-                placeholder="tracedSVG"
-                className="img"
-                imgStyle={{
-                objectFit: "cover",
-                }}
-            /> */}
-
             {/* First Content */}
             {/* <Card> */}
             <section className="text-center fw-bold pt-5">
@@ -43,7 +32,7 @@ const about = () => {
             {/* </Card> */}
 
             {/* Second Content */}
-            <div className="grid pt-4">
+            <div className="grid pt-5">
               <section className="container position-relative">
                 <div className="row">
                   <div className="">
@@ -53,7 +42,7 @@ const about = () => {
                     <div className="line card" />
                   </div>
 
-                  <Card className="overflow-auto bg-dark text-white rounded fs-4 cardContent">
+                  <Card className="overflow-auto bg-dark text-white rounded fs-5 cardContent">
                     <div>
                       <p>
                         Here at M.R Studios, we realize that style and
