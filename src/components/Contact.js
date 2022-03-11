@@ -23,7 +23,11 @@ const Contact = () => {
             </div>
           </div>
 
-          <StaticImage src="../assets/images/contactshoe.jpg" className="img" />
+          <StaticImage
+            src="../assets/images/contactshoe.jpg"
+            className="img"
+            alt="contact"
+          />
         </div>
       </Container>
     </Wrapper>

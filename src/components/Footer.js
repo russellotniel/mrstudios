@@ -22,7 +22,7 @@ const Wrapper = styled.footer`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #212529;
+    background-color: #1c1c1c;
   }
 `
 

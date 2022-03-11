@@ -11,6 +11,7 @@ const Hero = () => {
         layout="constrained"
         placeholder="tracedSVG"
         className="img"
+        alt="hero"
         imgStyle={{
           objectFit: "cover",
         }}
@@ -84,7 +85,7 @@ const Wrapper = styled.section`
     }
 
     .img {
-      height: 93vh;
+      height: 94vh;
     }
   }
 `

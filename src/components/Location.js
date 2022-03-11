@@ -22,6 +22,7 @@ const Location = () => {
               src="../assets/images/jakarta.jpg"
               placeholder="tracedSVG"
               className="img"
+              alt="Jakarta"
             />
 
             <div className="city mt-3">
@@ -36,6 +37,7 @@ const Location = () => {
               src="../assets/images/surabaya.jpg"
               placeholder="tracedSVG"
               className="img"
+              alt="Surabaya"
             />
 
             <div className="city mt-3">
@@ -50,6 +52,7 @@ const Location = () => {
               src="../assets/images/denpasar.jpg"
               placeholder="tracedSVG"
               className="img"
+              alt="Denpasar"
             />
 
             <div className="city mt-3">

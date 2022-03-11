@@ -7,7 +7,7 @@ import SEO from "../components/SEO"
 const ErrorPage = () => {
   return (
     <Layout>
-      <SEO title="Error" />
+      <SEO title="404 Page Not Found" />
       <Container>
         <Wrapper>
           <h1>Oops..</h1>
@@ -22,7 +22,7 @@ const ErrorPage = () => {
 }
 
 const Wrapper = styled.div`
-  min-height: 81vh;
+  min-height: 82vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

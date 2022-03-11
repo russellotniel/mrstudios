@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import Location from "../components/Location"
 import Contact from "../components/Contact"
 import SEO from "../components/SEO"
+import Survey from "../components/Survey"
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Hero />
       <About />
       <Location />
+      <Survey />
       <Contact />
     </Layout>
   )
