@@ -36,31 +36,31 @@ const contact = () => {
                 <IconContext.Provider value={{ size: "50px" }}>
                   <div className="row">
                     {/* <Stack direction="horizontal" gap={4}> */}
-                      <div className="col-sm text-center">
-                        <p>
-                          <span>Address:</span> 198 West 21th Street, Suite 721
-                          New York NY 10016
-                        </p>
-                        <FaAddressBook></FaAddressBook>
-                      </div>
-                      <div className="col-sm text-center">
-                        <p>
-                          <span>Phone:</span> +62 832-4242-2345
-                        </p>
-                        <FaPhone></FaPhone>
-                      </div>
-                      <div className="col-sm text-center">
-                        <p>
-                          <span>Email:</span> mrstudios@gmail.com
-                        </p>
-                        <MdEmail></MdEmail>
-                      </div>
-                      <div className="col-sm text-center">
-                        <p>
-                          <span>Website:</span> mrstudios.com
-                        </p>
-                        <FaGlobe></FaGlobe>
-                      </div>
+                    <div className="col-sm text-center">
+                      <p>
+                        <span>Address:</span> 198 West 21th Street, Suite 721
+                        New York NY 10016
+                      </p>
+                      <FaAddressBook></FaAddressBook>
+                    </div>
+                    <div className="col-sm text-center">
+                      <p>
+                        <span>Phone:</span> +62 832-4242-2345
+                      </p>
+                      <FaPhone></FaPhone>
+                    </div>
+                    <div className="col-sm text-center">
+                      <p>
+                        <span>Email:</span> mrstudios@gmail.com
+                      </p>
+                      <MdEmail></MdEmail>
+                    </div>
+                    <div className="col-sm text-center">
+                      <p>
+                        <span>Website:</span> mrstudios.com
+                      </p>
+                      <FaGlobe></FaGlobe>
+                    </div>
                     {/* </Stack> */}
                   </div>
                 </IconContext.Provider>
@@ -196,21 +196,6 @@ const Wrapper = styled.section`
   .img {
     margin-top: 3rem;
   }
-  /* 
-  a {
-    background: gray;
-    border: 2px solid white;
-    padding: 1rem;
-    text-transform: capitalize;
-    text-decoration: none;
-    letter-spacing: 5px;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    background: linear-gradient(to left, gray 50%, #1c1c1c 50%) right;
-    background-size: 200%;
-    transition: 0.3s ease-out;
-  } */
 
   a:hover {
     background-position: left;
@@ -235,7 +220,7 @@ const Wrapper = styled.section`
       justify-content: center;
     }
 
-    .info{
+    .info {
       display: flex;
       flex-direction: column;
       align-content: center;
