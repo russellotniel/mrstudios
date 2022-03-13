@@ -72,6 +72,7 @@ const Wrapper = styled.div`
     background-color: white;
     color: black;
     width: 90%;
+    border: 1px solid;
   }
 
   button:hover {

@@ -59,9 +59,6 @@ const Survey = () => {
 
         return entry.update()
       })
-      .then(entry =>
-        console.log(`Entry ${entry.fields.name["en-US"]} updated.`)
-      )
       .catch(console.error)
   }
 
@@ -73,7 +70,7 @@ const Survey = () => {
           <List className="py-4">
             <h2>Which brand do you prefer?</h2>
             <div className="line"></div>
-            <ul className="votes">
+            <div className="survey-content">
               {items.map(item => {
                 const {
                   id,
@@ -81,16 +78,16 @@ const Survey = () => {
                 } = item
 
                 return (
-                  <li key={id}>
-                    <h3 className="pb-2">{name["en-US"]}</h3>
+                  <div key={id} className="votes">
+                    <h3>{name["en-US"]}</h3>
                     <Button variant="outline-dark" onClick={() => addVote(id)}>
                       Vote
                     </Button>
                     <h6 className="pt-3">{votes["en-US"]} votes</h6>
-                  </li>
+                  </div>
                 )
               })}
-            </ul>
+            </div>
           </List>
         )}
       </Container>
@@ -119,6 +116,7 @@ const List = styled.div`
   .line {
     border-bottom: 2px solid gray;
     width: 10%;
+    margin-bottom: 1.5em;
   }
 
   .title {
@@ -130,27 +128,25 @@ const List = styled.div`
   .votes {
     display: flex;
     flex-direction: column;
-    text-align: center;
-  }
-
-  .votes li {
+    align-items: center;
+    border: 1px solid black;
     margin: 1rem 0;
     padding: 1rem;
-    border: 1px solid black;
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 850px) {
     .line {
       width: 5%;
     }
 
-    .votes {
-      flex-direction: row;
-      justify-content: space-evenly;
+    .survey-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1rem;
     }
 
-    .votes li {
-      width: 20vw;
+    .votes {
+      flex-direction: column;
     }
   }
 `
