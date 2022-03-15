@@ -22,8 +22,8 @@ const Location = () => {
               src="../assets/images/jakarta.jpg"
               placeholder="tracedSVG"
               alt="Jakarta"
-              height={800}
-              width={600}
+              height={540}
+              width={410}
             />
 
             <div className="city mt-3">
@@ -38,8 +38,8 @@ const Location = () => {
               src="../assets/images/surabaya.jpg"
               placeholder="tracedSVG"
               alt="Surabaya"
-              height={800}
-              width={600}
+              height={540}
+              width={410}
             />
 
             <div className="city mt-3">
@@ -54,8 +54,8 @@ const Location = () => {
               src="../assets/images/denpasar.jpg"
               placeholder="tracedSVG"
               alt="Denpasar"
-              height={800}
-              width={600}
+              height={540}
+              width={410}
             />
 
             <div className="city mt-3">
@@ -88,7 +88,7 @@ const Wrapper = styled.section`
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
 
   .city span {
