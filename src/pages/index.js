@@ -12,7 +12,7 @@ import SEO from "../components/SEO"
 // const Location = lazy(() => import("../components/Location"))
 // const Contact = lazy(() => import("../components/Contact"))
 // const SEO = lazy(() => import("../components/SEO"))
-const Survey = loadable(() => import("../components/Survey"))
+// const Survey = loadable(() => import("../components/Survey"))
 
 // const renderLoader = () => <p></p>
 
@@ -23,7 +23,7 @@ const HomePage = () => {
       <Hero />
       <About />
       <Location />
-      <Survey />
+      {/* <Survey /> */}
       <Contact />
     </Layout>
   )

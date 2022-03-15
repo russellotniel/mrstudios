@@ -21,8 +21,9 @@ const Location = () => {
             <StaticImage
               src="../assets/images/jakarta.jpg"
               placeholder="tracedSVG"
-              className="img"
               alt="Jakarta"
+              height={800}
+              width={600}
             />
 
             <div className="city mt-3">
@@ -36,8 +37,9 @@ const Location = () => {
             <StaticImage
               src="../assets/images/surabaya.jpg"
               placeholder="tracedSVG"
-              className="img"
               alt="Surabaya"
+              height={800}
+              width={600}
             />
 
             <div className="city mt-3">
@@ -51,8 +53,9 @@ const Location = () => {
             <StaticImage
               src="../assets/images/denpasar.jpg"
               placeholder="tracedSVG"
-              className="img"
               alt="Denpasar"
+              height={800}
+              width={600}
             />
 
             <div className="city mt-3">
@@ -86,11 +89,6 @@ const Wrapper = styled.section`
     height: 100%;
     flex-direction: column;
     justify-content: center;
-  }
-
-  .location .img {
-    width: 100%;
-    height: 65vh;
   }
 
   .city span {
