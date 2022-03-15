@@ -30,8 +30,8 @@ const Wrapper = styled.section`
   position: relative;
 
   .img {
-    height: auto;
-    width: auto;
+    height: 35vh;
+    width: 100vw;
   }
 
   .info {
@@ -86,6 +86,7 @@ const Wrapper = styled.section`
 
     .img {
       height: 94vh;
+      width: 100vw;
     }
   }
 `

@@ -27,6 +27,8 @@ const Contact = () => {
             src="../assets/images/contactshoe.jpg"
             className="img"
             alt="contact"
+            height={510}
+            width={640}
           />
         </div>
       </Container>
