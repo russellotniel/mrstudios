@@ -1,8 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../components/Layout"
-import Container from "react-bootstrap/Container"
-import Card from "react-bootstrap/Card"
+import {Container, Card} from "react-bootstrap"
 import { StaticImage } from "gatsby-plugin-image"
 import { SiNike, SiAdidas, SiNewbalance, SiJordan } from "react-icons/si"
 import { IconContext } from "react-icons"
@@ -15,6 +14,8 @@ const about = () => {
       <SEO title="About Us" />
         <StaticImage
           src="../assets/images/shoegallery.jpg"
+          width="6048"
+          height="4024"
           layout="constrained"
           placeholder="tracedSVG"
           className="imgShoe"
