@@ -3,8 +3,8 @@ import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import slugify from "slugify"
 import Brands from "./Brands"
-import styled from "styled-components"
 import Algolia from "../components/Algolia"
+import styled from "styled-components"
 
 const Sneakers = ({ sneakers }) => {
   const [allSneakers, setAllSneakers] = useState(sneakers)
@@ -25,7 +25,7 @@ const Sneakers = ({ sneakers }) => {
       <Algolia />
       <div className="sneakers">
         {allSneakers.map(sneaker => {
-          const { id, name, image, brand, price } = sneaker
+          const { id, name, image, price } = sneaker
           const pathToImage = getImage(image)
           const slug = slugify(name, {
             lower: true,
