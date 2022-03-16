@@ -16,12 +16,12 @@ const Hero = () => {
           objectFit: "cover",
         }}
       />
-      <div className="info">
+      {/* <div className="info">
         <article>
           <h1>Level up your sneaker game with us</h1>
           <Link to="/products">Shop now</Link>
         </article>
-      </div>
+      </div> */}
     </Wrapper>
   )
 }
