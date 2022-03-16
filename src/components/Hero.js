@@ -6,16 +6,18 @@ import { Link } from "gatsby"
 const Hero = () => {
   return (
     <Wrapper>
-      <StaticImage
-        src="../assets/images/main-hero.jpg"
-        layout="constrained"
-        placeholder="tracedSVG"
-        className="img"
-        alt="hero"
-        imgStyle={{
-          objectFit: "cover",
-        }}
-      />
+      <div className="hero">
+        <StaticImage
+          src="../assets/images/main-hero.jpg"
+          layout="constrained"
+          placeholder="tracedSVG"
+          className="img"
+          alt="hero"
+          imgStyle={{
+            objectFit: "cover",
+          }}
+        />
+      </div>
       {/* <div className="info">
         <article>
           <h1>Level up your sneaker game with us</h1>
@@ -27,11 +29,14 @@ const Hero = () => {
 }
 
 const Wrapper = styled.section`
-  position: relative;
+  height: 100%;
 
   .img {
-    height: 35vh;
-    width: 100vw;
+    position: relative;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .info {
@@ -85,8 +90,7 @@ const Wrapper = styled.section`
     }
 
     .img {
-      height: 94vh;
-      width: 100vw;
+      max-height: 94vh;
     }
   }
 `
