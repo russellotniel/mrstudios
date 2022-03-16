@@ -2,34 +2,71 @@ import React from "react"
 import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
+import heroImage from "../assets/images/main-hero.jpg"
 
 const Hero = () => {
   return (
     <Wrapper>
-      <div className="hero">
+      {/* <div className="hero">
         <StaticImage
           src="../assets/images/main-hero.jpg"
           layout="constrained"
           placeholder="tracedSVG"
-          className="img"
+          // className="img"
           alt="hero"
           imgStyle={{
             objectFit: "cover",
           }}
         />
       </div>
-      {/* <div className="info">
+      <div className="info">
         <article>
           <h1>Level up your sneaker game with us</h1>
           <Link to="/products">Shop now</Link>
-        </article>
-      </div> */}
+          </article>
+        </div> */}
+
+      <div className="hero">
+        <h1>Level up your sneaker game with us</h1>
+        <Link to="/products">Shop now</Link>
+      </div>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.section`
-  height: 100%;
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(${heroImage});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    object-fit: contain;
+    color: white;
+  }
+
+  /* .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  } */
+
+  /* height: 100%;
 
   .img {
     position: relative;
@@ -92,7 +129,7 @@ const Wrapper = styled.section`
     .img {
       max-height: 94vh;
     }
-  }
+  } */
 `
 
 export default Hero
