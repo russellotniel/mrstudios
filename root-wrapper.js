@@ -8,15 +8,16 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Inter';
+}
+
 ul {
   list-style-type: none;
 }
 
 a {
   text-decoration: none;
-}
-
-a:hover {
 }
 
 h1, h2, h3, h4 {

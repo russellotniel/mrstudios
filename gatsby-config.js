@@ -38,5 +38,18 @@ module.exports = {
         chunkSize: 10000,
       },
     },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Inter",
+              variants: ["300", "400", "500", "600", "700"],
+            },
+          ],
+        },
+      },
+    },
   ],
 }
