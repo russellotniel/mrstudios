@@ -37,6 +37,22 @@ const Navbar = () => {
             Products
           </Link>
           <Link
+            to="/newsletter"
+            className="nav-link"
+            activeClassName="active-link"
+            onClick={() => setShow(false)}
+          >
+            Newsletter
+          </Link>
+          <Link
+            to="/blog"
+            className="nav-link"
+            activeClassName="active-link"
+            onClick={() => setShow(false)}
+          >
+            Blog
+          </Link>
+          <Link
             to="/contact"
             className="nav-link"
             activeClassName="active-link"
