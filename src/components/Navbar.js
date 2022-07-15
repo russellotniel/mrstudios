@@ -37,7 +37,7 @@ const Navbar = () => {
             Products
           </Link>
           <Link
-            to="/newsletter"
+            to="/subscribe"
             className="nav-link"
             activeClassName="active-link"
             onClick={() => setShow(false)}
