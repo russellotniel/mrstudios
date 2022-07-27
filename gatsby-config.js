@@ -1,4 +1,4 @@
-const { documentToHtmlString } = require("@contentful/rich-text-html-renderer")
+// const { documentToHtmlString } = require("@contentful/rich-text-html-renderer")
 
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
@@ -8,8 +8,8 @@ module.exports = {
   siteMetadata: {
     title: `M.R Studios`,
     description: `Providing you with the best sneakers in Indonesia`,
-    // siteUrl: `https://mrstudios.netlify.app/`,
-    siteUrl: `http://localhost:8000/`,
+    siteUrl: `https://mrstudios.netlify.app/`,
+    // siteUrl: `http://localhost:8000/`,
   },
 
   plugins: [
