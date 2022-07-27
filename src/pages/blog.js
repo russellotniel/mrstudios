@@ -8,7 +8,7 @@ import News from "../components/News"
 
 const blog = ({ data }) => {
   const {
-    allContentfulNews: { edges: news },
+    allContentfulNews: { nodes: news },
   } = data
 
   return (
@@ -24,18 +24,35 @@ const blog = ({ data }) => {
   )
 }
 
+// export const query = graphql`
+//   {
+//     allContentfulNews {
+//       edges {
+//         node {
+//           title
+//           content {
+//             content
+//           }
+//           blogThumbnail {
+//             gatsbyImageData
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
+
 export const query = graphql`
   {
     allContentfulNews {
-      edges {
-        node {
-          title
-          content {
-            content
-          }
-          blogThumbnail {
-            gatsbyImageData
-          }
+      nodes {
+        title
+        slug
+        blogThumbnail {
+          gatsbyImageData
+        }
+        body {
+          raw
         }
       }
     }

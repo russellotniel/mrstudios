@@ -10,7 +10,7 @@ const News = ({ news }) => {
   return (
     <Wrapper>
       <div>
-        {news.map((blog, index) => {
+        {/* {news.map((blog, index) => {
           const { title } = blog.node
           const pathToImage = getImage(blog.node.blogThumbnail.gatsbyImageData)
           const content = blog.node.content.content
@@ -20,6 +20,20 @@ const News = ({ news }) => {
               <Link key={index}>
                 <h2 key={index}>{title}</h2>
                 <GatsbyImage image={pathToImage} alt={title} className="img"/>
+              </Link>
+            </>
+          )
+        })} */}
+        {news.map((blog, index) => {
+          const title = blog.title
+          const slug = blog.slug
+          const pathToImage = getImage(blog.blogThumbnail.gatsbyImageData)
+
+          return (
+            <>
+              <Link key={index} to={slug}>
+                <h2>{title}</h2>
+                <GatsbyImage image={pathToImage} alt={title} className="img" />
               </Link>
             </>
           )
