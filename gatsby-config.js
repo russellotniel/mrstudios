@@ -7,7 +7,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `M.R Studios`,
-    description: `Providing you with the best sneakers in Indonesia`,
+    description: `Providing you with the best sneakers in Indonesia. Made by Mario and Russell`,
     siteUrl: `https://mrstudios.netlify.app/`,
     // siteUrl: `http://localhost:8000/`,
   },
